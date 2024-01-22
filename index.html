@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html lang = "en">
+ <head>
+ 
+  <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+  <script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+  <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+
+    <title>ToDo Using Bun and HTMX</title>
+ </head>
+  <body style="background-color : #fbf0df; font-family: Arial;">
+    <header>
+      <hgroup>
+        <h1>Bun 🌰 X HTMX</h1>
+      </hgroup>
+    </header>
+    <main>
+      <form 
+    
+        hx-post= "/todos"
+        hx-target="#todos" 
+        hx-ext="json-enc" 
+        _="on sunmit target.resat()"
+      >
+        <label for="todo" style="background-color: #fdbacf; border-radius: 3px; padding:10px "> New Todo 📑</label>
+        <input type="text" id="todo" placeholder="Add new Todo" name = "todo">
+          <button  style="border-radius:20px"type="submit">add ➕</button>
+      </form>
+      <section id="todos" style="color:#3366cc" hx-get="/todos" hx-trigger="load"></section>
+    </main>
+  </body>
+</html>
