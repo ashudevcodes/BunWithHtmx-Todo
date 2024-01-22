@@ -1,4 +1,4 @@
-# BUN X HTMX Todo
+# BUN x HTMX Todo
 
 To install dependencies:
 
