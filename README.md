@@ -18,7 +18,7 @@ This repository holds a simple yet powerful to-do list application built with th
 
 1. **Clone the repo:** Run `git clone https://github.com/ashudevcodes/BunWithHtmx-Todo`
 2. **Install dependencies:** Run `bun install`
-3. **Start the server:** Run `bun run dev`
+3. **Start the server:** Run `bun run index.tsx`
 4. **Open http://localhost:8080** in your browser and start conquering your to-dos!
 
 ### Dive Deeper:
